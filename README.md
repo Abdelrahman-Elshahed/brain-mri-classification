@@ -6,6 +6,7 @@ This project provides a web-based system for classifying brain MRI scans into fo
 
 ## Table of Contents
 
+  - [Data Source](#data-source)
   - [Project Structure](#project-structure)
   - [Features](#features)
   - [Usage](#usage)
@@ -17,6 +18,13 @@ This project provides a web-based system for classifying brain MRI scans into fo
 
 ---
 
+## Data Source
+
+  - Link: [Brain Tumor MRI Dataset (Kaggle)](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
+  - Classes: **Glioma**, **Meningioma**, **Pituitary**, **No Tumor**
+  - Images: This dataset contains **7023** images of human brain MRI images
+
+---
 ## Project Structure
 ```bash
 brain-mri-classification/
@@ -109,6 +117,8 @@ Send a `GET` request to `http://localhost:8000/health` to verify the API is runn
 
 - Model Prediction:
 Send a `POST` request to `/predict/vgg` or `/predict/resnet` with a brain MRI image file using the `form-data` key `file`.
+
+Below is a screenshots of a successful prediction request in Postman:
 
 ![Image](https://github.com/user-attachments/assets/c5384785-6fc0-4e00-a1fc-800d88ae9e84)
 
